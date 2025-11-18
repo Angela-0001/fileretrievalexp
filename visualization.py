@@ -8,7 +8,7 @@ import numpy as np
 from matplotlib.patches import Rectangle
 import matplotlib.patches as mpatches
 try:
-    import seaborn as sns
+    import seaborn as sns  # type: ignore[reportMissingModuleSource]
     _HAS_SEABORN = True
 except Exception:
     sns = None
